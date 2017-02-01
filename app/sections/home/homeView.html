@@ -1,0 +1,261 @@
+<section id="sliderInicio">
+    <div id="carousel" class="sliderInicio">
+        <div class="owl-carousel sliderHome">
+            <div ng-repeat="bkg in img_slider" class="item slide" style="background-image:url('{{bkg}}'); background-position: 50% 30%; background-size: cover;">
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="services">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<h2 class="titulo-principal">Our services</h2>
+				<div class="linea-centro"><i class="fa fa-paw icono-huella"></i></div>
+				<div class="col-md-4 service">
+					<div class="ih-item circle colored effect13 from_left_and_right">
+						<a ng-click="readMoreDog()">
+							<div class="img"><img src="assets/images/dog.jpg" alt="img"></div>
+							<div class="info">
+								<div class="info-back">
+									<h3>Dog Walking</h3>
+									<p>{{moreOrLessDog}}</p>
+								</div>
+							</div>
+						</a>
+					</div>
+					<h3 class="service-title">Dog Walking</h3>
+					<p class="service-text">{{dogText | limitTo: numLimitDog}} <span class="readMore" ng-click="readMoreDog()">{{moreOrLessDog}}</span></p>
+				</div>
+				<div class="col-md-4 service">
+					<div class="ih-item circle colored effect13 from_left_and_right">
+						<a ng-click="readMoreCat()">
+							<div class="img"><img src="assets/images/cat.jpg" alt="img"></div>
+							<div class="info">
+								<div class="info-back">
+									<h3>Cat Sitting</h3>
+									<p>{{moreOrLessCat}}</p>
+								</div>
+							</div>
+						</a>
+					</div>
+					<h3 class="service-title">Cat Sitting</h3>
+					<p class="service-text">{{catText | limitTo: numLimitCat}} <span class="readMore" ng-click="readMoreCat()">{{moreOrLessCat}}</span></p>
+				</div>
+				<div class="col-md-4 service">
+					<div class="ih-item circle colored effect13 from_left_and_right">
+						<a ng-click="readMoreOther()">
+							<div class="img"><img src="assets/images/other.jpg" alt="img"></div>
+							<div class="info">
+								<div class="info-back">
+									<h3>Other Services</h3>
+									<p>{{moreOrLessOther}}</p>
+								</div>
+							</div>
+						</a>
+					</div>
+					<h3 class="service-title">Other Services</h3>
+					<p class="service-text">{{otherText | limitTo: numLimitOther}} <span class="readMore" ng-click="readMoreOther()">{{moreOrLessOther}}</span></p>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section id="prices">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<h2 class="titulo-principal">Our prices</h2>
+				<div class="linea-centro"><i class="fa fa-paw icono-huella"></i></div>
+			</div>
+			<div class="col-md-offset-1 col-md-10">
+				<div class="col-md-6 price">
+					<h4 class="price-title">Dog Walking</h4>
+					<ul class="price-list">
+						<li>Group Dog Walking - 30 Minutes</li>
+						<li>Group Dog Walking - 1 Hour</li>
+						<li>Additional dog per household</li>
+						<li>Weekday Evenings (After 5pm) - 1 hour</li>
+						<li>Weekends (Until 5pm)</li>
+						<li>Individual Walks -  1 hour</li>
+					</ul>
+					<h4 class="price-title-cat">Cat Sitting</h4>
+					<ul class="price-list">
+						<li>Cat Sitting -  2 visits per day</li>
+						<li>Cat Sitting - 1 visit per day</li>
+					</ul>
+					<h4 class="price-title-cat">Other Services</h4>
+					<ul class="price-list">
+						<li>Puppy Visits - 30 Minutes</li>
+						<li>Puppy Visits - 1 Hour</li>
+						<li>Premium Dog Shampoo and conditioner treatment</li>
+						<li>Small and Exotic -  30 Minutes</li>
+					</ul>
+				</div>
+				<div class="col-md-6 price">
+					<h4 class="price-title">Price</h4>
+					<ul class="price-list">
+						<li>£6:00</li>
+						<li>£10:00</li>
+						<li>£3.00</li>
+						<li>£12.00</li>
+						<li>£14.00</li>
+						<li>£12.50</li>
+					</ul>
+					<h4 class="price-title-cat">&nbsp;</h4>
+					<ul class="price-list">
+						<li>£12.00</li>
+						<li>£7.00</li>
+					</ul>
+					<h4 class="price-title-cat">&nbsp;</h4>
+					<ul class="price-list">
+						<li>£12.50</li>
+						<li>£14.00</li>
+						<li>£20.00</li>
+						<li>£7.00</li>
+					</ul>
+				</div>
+			</div>
+			<div class="price-text col-md-12">
+				<p>10% Loyalty Discount for booking 1 month in advanced. (Minimum of 5X 1 hour walks per week)</p>
+				<p>If you have any other enquiries feel free to call us!</p>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section id="about-us">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<h2 class="titulo-principal">About us</h2>
+				<div class="linea-centro"><i class="fa fa-paw icono-huella"></i></div>
+			</div>
+			<!--<div class="col-md-5 animate-dog">
+			</div>-->
+			<div class="col-md-12 about">
+				<p class="about-text">Choosing Doggy Breaks will give your pets the opportunity to get fitter, healthier and happier by providing you and your beloved animals whether with a friendly, reliable and trustworthy service. We are based in Saddleworth which is where all dogs will be walked in open fields, along canals, countryside paths and never on the roads. We pride ourselves on genuinely caring for the pets we look after. All members of our team have long term experience with dogs and cats themselves. Your pets are in safe hands with Doggy Breaks. We are here for you and your animals!</p>
+				<div class="col-md-4 about-info">
+					<div class="about-icon">
+						<i class="fa fa-paw"></i>
+					</div>
+					<h3 class="about-title">Experienced dog handlers</h3>
+				</div>
+				<div class="col-md-4 about-info">
+					<div class="about-icon">
+						<i class="fa fa-user"></i>
+					</div>
+					<h3 class="about-title">Fully Insured</h3>
+				</div>
+				<div class="col-md-4 about-info">
+					<div class="about-icon">
+						<i class="fa fa-medkit"></i>
+					</div>
+					<h3 class="about-title">Canine first aid trained</h3>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section id="testimonials">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<h2 class="titulo-principal">Our testimonials</h2>
+				<div class="linea-centro"><i class="fa fa-paw icono-huella"></i></div>
+			</div>
+			<div id="carousel">
+		        <div class="owl-carousel sliderTestimonials">
+		            <div class="item slide">
+						<p class="testimonial-text">Looking started he up perhaps against. How remainder all additions get elsewhere resources. One missed shy wishes supply design answer formed. Prevent on present hastily passage an subject in be. Be happiness arranging so newspaper defective affection ye. Families blessing he in to no daughter.</p>
+						<p class="testimonial-autor">John Doe</p>
+					</div>
+					<div class="item slide">
+						<p class="testimonial-text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.</p>
+						<p class="testimonial-autor">Dani Paradela</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section id="contact">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<h2 class="titulo-principal">Contact us</h2>
+				<div class="linea-centro"><i class="fa fa-paw icono-huella"></i></div>
+			</div>
+			<div class="col-md-offset-1 col-md-10 contact-form">
+				<form class="form-registro" role="form">
+					<div class="form-group">
+			            <div class="input-registro col-md-5">
+			                <label>First Name:</label>
+			                <input type="text" class="form-control" ng-model="nombre" required>
+			            </div>
+			            <div class="input-registro col-md-offset-1 col-md-6">
+			                <label>Last Name:</label>
+			                <input type="text" class="form-control" ng-model="nombre" required>
+			            </div>
+			            <div class="input-registro col-md-5">
+			                <label>Dog's Name:</label>
+			                <input type="text" class="form-control" ng-model="nombre" required>
+			            </div>
+			            <div class="input-registro col-md-offset-1 col-md-6">
+			                <label>Postcode:</label>
+			                <input type="text" class="form-control" ng-model="nombre" required>
+			            </div>
+			            <div class="input-registro col-md-5">
+			                <label>Email:</label>
+			                <input type="email" class="form-control" ng-model="email" required>
+			            </div>
+			            <div class="input-registro col-md-offset-1 col-md-6">
+			                <label>Phone Number:</label>
+			                <input type="text" class="form-control" ng-model="telefono" required>
+			            </div>
+			            <div class="input-registro col-md-5">
+			            	<label>Which services are you interested in?</label>
+			            	<div class="checkbox">
+								<label class="col-md-6"><input type="checkbox" value=""> <span class="checkbox-option">Group Walks</span></label>
+								<label class="col-md-6"><input type="checkbox" value=""> <span class="checkbox-option">Solo Walks</span></label>
+								<label class="col-md-6"><input type="checkbox" value=""> <span class="checkbox-option">Weekend Walks</span></label>
+								<label class="col-md-6"><input type="checkbox" value=""> <span class="checkbox-option">Daycare</span></label>
+							</div>
+	                  	</div>
+	                  	<div class="input-registro col-md-offset-1 col-md-6">
+	                  		<label>Which days of the week do you require care?</label>
+			            	<div class="checkbox">
+								<label class="col-md-6"><input type="checkbox" value=""> <span class="checkbox-option">Monday</span></label>
+								<label class="col-md-6"><input type="checkbox" value=""> <span class="checkbox-option">Tuesday</span></label>
+								<label class="col-md-6"><input type="checkbox" value=""> <span class="checkbox-option">Wednesday</span></label>
+								<label class="col-md-6"><input type="checkbox" value=""> <span class="checkbox-option">Thursday</span></label>
+								<label class="col-md-6"><input type="checkbox" value=""> <span class="checkbox-option">Friday</span></label>
+								<label class="col-md-6"><input type="checkbox" value=""> <span class="checkbox-option">Saturday</span></label>
+								<label class="col-md-6"><input type="checkbox" value=""> <span class="checkbox-option">Sunday</span></label>
+							</div>
+	                  	</div>
+                  		<div class="input-registro">
+			                <label>Message:</label>
+			                <textarea class="form-control" rows="4" cols="50" ng-model="mensaje"></textarea>
+			            </div>
+			    	</div>
+			    	<div class="col-md-12 boton-form text-center">
+			            <button class="btn btn-lg btn-primary" ng-click="Enviar()" type="submit">Send message</button>
+			        </div>
+			    </form>
+			</div>
+		</div>
+	</div>
+</section>
+
+		<section id="map">
+			
+		</section>
+
+<!--
+http://preview.themeforest.net/item/happy-paws-pet-responsive-one-page-html/full_screen_preview/12904571?_ga=1.11052403.630055156.1470382428
+-->

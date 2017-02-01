@@ -1,0 +1,228 @@
+#about-us{
+	padding: 80px 0;
+	.animate-dog{
+		/*background: url("http://www.ingridkuhn.com/themes/happypaws/css/../img/png_bg/bones.png"),url("http://www.ingridkuhn.com/themes/happypaws/css/../img/calltoaction.png"),url("http://www.ingridkuhn.com/themes/happypaws/css/../img/png_bg/bones1.png");
+		animation: dog-bones-falling 6s linear infinite;
+		animation-direction: normal;
+		background-repeat: no-repeat;
+		height: 400px;*/
+	}
+	.about{
+		padding-top: 40px;
+		.about-image{
+			width: 100%;
+			height: 250px;
+		}
+		.about-title{
+			font-weight: 400;
+    		font-size: 24px;
+    		text-align: center;
+		}
+		.about-text{
+			font-size: 17px;
+		    line-height: 26px;
+		    color: #606060;
+		    margin: 0 10px;
+		    text-align: justify;
+		}
+		.about-info{
+			text-align: center;
+			padding-top: 60px;
+		}
+		.about-icon{
+			border-radius: 50%;
+			margin: auto;
+			position: relative;
+			vertical-align: middle;
+			width: 98px;
+			z-index: 2;
+			margin-bottom: 20px;
+			border: 2px dotted #8CC63F;
+			i{
+				font-size: 66px;
+				height: 86px;
+				padding-top: 10px;
+			}
+		}
+	}
+}
+
+#services{
+	padding: 50px 0;
+	.service{
+		padding-top: 20px;
+		.ih-item{
+			margin: 0 auto;
+			a{
+				cursor: pointer;
+			}
+			.info-back{
+				p{
+					color: #fff;
+				}
+			}
+		}
+		.ih-item.circle.effect13.colored .info {
+			background-color: rgba(140, 198, 63, 0.8);
+		}
+		.service-title{
+			font-weight: 400;
+    		font-size: 30px;
+    		text-align: center;
+		}
+		.service-text{
+			font-size: 17px;
+		    line-height: 26px;
+		    color: #606060;
+		    margin: 0 10px;
+		    text-align: justify;
+		    .readMore{
+		    	font-size: 13px;
+		    	font-style: italic;
+		    	color: #2EAA32;
+		    	cursor: pointer;
+		    }
+		}
+	}
+}
+
+#prices{
+	padding: 50px 0;
+	background: url("http://www.ingridkuhn.com/themes/happypaws/css/../img/png_bg/heartpaws2.png"),url("http://www.ingridkuhn.com/themes/happypaws/css/../img/png_bg/heartpaws.png");
+	background-position: left,right;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	color: #fff;
+	background-color: #2EAA32;
+	.price{
+		padding-top: 20px;
+		padding-bottom: 50px;
+		.price-title{
+			font-weight: 400;
+			font-size: 24px;
+			text-align: center;
+			padding-bottom: 10px;
+		}
+		.price-title-cat, .price-title-other{
+			font-weight: 400;
+			font-size: 24px;
+			text-align: center;
+			padding-top: 40px;
+			padding-bottom: 10px;
+		}
+		.price-list{
+			padding: 0;
+			text-align: center;
+			li{
+				padding: 4px;
+				font-size: 16px;
+				font-weight: 300;
+			}
+		}
+	}
+	.price-text{
+		text-align: center;
+	}
+}
+
+#testimonials{
+	padding: 70px 0;
+	padding-bottom: 80px;
+	background: url("http://www.ingridkuhn.com/themes/happypaws/css/../img/png_bg/heartpaws2.png"),url("http://www.ingridkuhn.com/themes/happypaws/css/../img/png_bg/heartpaws.png");
+	background-position: left,right;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	color: #fff;
+	background-color: #2EAA32;
+	.testimonial-text{
+		text-align: center;
+		margin-bottom: 19px;
+	    padding: 0 145px;
+	    font-size: 15px;
+	    font-weight: 300;
+	    margin-top: 23px;
+	}
+	.testimonial-autor{
+		text-transform: uppercase;
+		font-weight: 400;
+		text-align: center;
+	    color: #fff;
+	    margin-bottom: 0px;
+	    font-size: 1.5rem;
+	}
+	.owl-dots{
+		bottom: -20%;
+		.owl-dot{
+			span{
+				border-width: 2px;
+				border-color: #fff;
+			}
+		}
+		.owl-dot.active{
+			span{
+				background-color: #fff;
+			}
+		}
+	}
+}
+
+#contact{
+	padding: 50px 0;
+	.contact-information{
+		h4{
+			font-weight: 400;
+			font-size: 30px;
+			padding-bottom: 10px;
+		}
+		p{
+			font-size: 17px;
+			line-height: 27px;
+			color: #606060;
+			margin: 10px;
+			i{
+				margin-right: 7px;
+				color: #333;
+			}
+		}
+	}
+	.contact-form{
+		.input-registro{
+			padding: 7px;
+		}
+		label{
+			font-size: 17px;
+			font-weight: 500;
+		}
+		input, textarea{
+			height: 37px;
+		}
+		textarea{
+			min-height: 140px;
+		}
+		button{
+			padding: 15px;
+			text-transform: uppercase;
+			font-size: 16px;
+			background-color: #8CC63F;
+			border-color: #8CC63F;
+		}
+		.checkbox{
+			input{
+				margin-top: -3px;
+			}
+			.checkbox-option{
+				padding: 10px;
+			}
+		}
+	}
+}
+
+#map{
+	
+}
+
+
+@keyframes dog-bones-falling {
+	0% {background-position: 60px 0px, 0px -50px, -5px 0px}
+	100% {background-position: 150px 300px, 0px -50px, 0px 300px;}
+}

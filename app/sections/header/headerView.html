@@ -1,0 +1,41 @@
+<div class="container">
+  <div class="col-md-2 logo">
+    <div class="logo" style="background-image:url('/assets/images/logo.png'); background-position: 50% 30%; background-size: cover;"></div>
+  </div>
+  <div class="col-md-10">
+    <div class="menu">
+      <ul>
+          <li><a href='' ng-click="wdkFunctions.goTo('home')">Home</a></li>
+          <li><a href='' ng-click="wdkFunctions.goTo('services')">Services</a></li>
+          <li><a href='' ng-click="wdkFunctions.goTo('prices')">Prices</a></li>
+          <li><a href='' ng-click="wdkFunctions.goTo('about-us')">About us</a></li>
+          <li><a href=''>Gallery</a></li>
+          <li><a href='' ng-click="wdkFunctions.goTo('testimonials')">Testimonials</a></li>
+          <li><a href='' ng-click="wdkFunctions.goTo('contact')">Contact us</a></li>
+          <div class="social">
+            <li><a class="fa fa-facebook pull-right" target='_blank' href=""></a></li>
+            <li><a class="fa fa-twitter pull-right" target='_blank' href=""></a></li>
+            <li><a class="fa fa-instagram pull-right" target='_blank' href=""></a></li>
+          </div>
+      </ul>
+    </div>
+  </div>
+
+  <div class="col-md-3 header clearfix">
+      <button type="button" class="navbar-toggle c-hamburger c-hamburger--htx" ng-click="toggleVisible()">
+          <span>toggle menu</span>
+      </button>
+      <div class="headerBG" ng-show="visibleMenu">
+        <div class="menuContent">
+          <ul class="cl-effect-5">
+            <li><a href=''></a></li>
+            <li><a href=''></a></li>
+            <li><a href=''></a></li>
+            <li><a href=''></a></li>
+            <li><a href=''></a></li>
+            <li><a href=''></a></li>
+          </ul>
+        </div>
+    </div>
+  </div>
+</div>

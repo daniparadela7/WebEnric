@@ -1,0 +1,8 @@
+#footer{
+	position: relative;
+	a{
+		font-weight: 600;
+	}
+}
+
+@include sticky-footer(100px);
