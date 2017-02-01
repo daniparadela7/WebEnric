@@ -4,7 +4,8 @@ angular.module('app')
 
 	$scope.img_slider = ['/assets/images/1.jpg',
 						 '/assets/images/2.jpg',
-						 '/assets/images/3.jpg'];
+						 '/assets/images/3.jpg',
+						 '/assets/images/4.jpg'];
 
 	$scope.dogText = "We specialise in dog walking and collection and drop-off is all included in the price! Group walking is the most popular choice as it is more economical and helps dogs improve on their social skills. However, we can also offer the possibility of individual walks... at an extra cost and can adapt around owners needs as we understand that not all dogs are the same as others, and that is why we love them! Do not hesitate to call us for a free consultation or visit to the home to give you and your pets a chance to get to know us before we assist them with any of your needs.";					 
 	$scope.catText = "Cat visits will allow your cat(s) to stay in the comfort of your home, enjoying familiar surroundings and favourite places to nap and relax. The visits are often more cost effective than using catteries and your cat will receive love and attention as well as being fed and cared for. Our team are always on hand if you need to give us a call whilst you are away and simply check how your little feline friends are doing! We are quite happy to cat-sit more than one cat per household for the same price. We offer a morning and afternoon service to suit your cat(s) needs.";
